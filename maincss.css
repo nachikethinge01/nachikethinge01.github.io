@@ -185,9 +185,10 @@ span.answer {
 }
 
 .skills-description{
-    margin-left: 39%;
+    margin-left: 35%;
     margin-top: 5%;
     position: absolute;
+    font-size: 1.3rem;
 }
 
 .skills-section-title{
@@ -219,7 +220,7 @@ span.answer {
 }
 
 .skill-name{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #2e2e2e;
     position: absolute; 
 }
@@ -286,7 +287,7 @@ li{
     flex-wrap:nowrap;
     width: 1250px;
     /* background-color: blue; */
-    margin-top: 5%;
+    margin-top: 4%;
     margin-left: 5%;
 }
 
@@ -316,7 +317,7 @@ li{
 .container .card .imgBx img{
     text-align: center;
     align-items: center;
-    max-width: 60px;
+    max-width: 100px;
 }
 
 .container .card .contentBx{
