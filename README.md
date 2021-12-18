@@ -1,3 +1,3 @@
 # My Personal Website
 
-nachikethinge01.github.io
+https://nachikethinge01.github.io
