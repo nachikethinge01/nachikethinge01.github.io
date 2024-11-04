@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background-color: #f4f4f9;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  width: 15%;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.sidebar button {
+  background: #444;
+  color: #fff;
+  padding: 1rem;
+  margin: 1rem;
+  border: none;
+  width: 80%;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.sidebar button:hover {
+  background: #555;
+}
+
+.panel {
+  display: none;
+  width: 85%;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.panel.active {
+  display: block;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.projects, .contact {
+  margin-top: 2rem;
+}
+
+.project {
+  margin-bottom: 1.5rem;
+}
+
+.project h3 {
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.project p {
+  font-size: 1rem;
+}
+
+.project a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
