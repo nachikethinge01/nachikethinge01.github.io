@@ -1,63 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width-device-width, intial-scale = 1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <style>
-            body {
-                background-color: #7e53f3;
-            }
-            h1 {
-                color: white;
-                position: absolute;
-                margin-left: 33%;
-                margin-top: 22%;
-                font-size: 3.0vw;
-            }
-            img {
-                width: 15%;
-                position: absolute;
-                margin-left: 42%;
-                margin-top: 2%;
-            }
-            .home {
-                width: fit-content;
-                padding: 0.5%;
-                color: rgb(255, 255, 255);
-                text-align: center;
-                font-size: 45px;
-                text-decoration: none;
-                text-shadow:
-                    0px 1px 3px rgba(000, 000, 000, 0.3),
-                    0px 0px 0px rgba(255, 255, 255, 0);
-                position: absolute;
-                clear: both;
-                margin-top: 27%;
-                margin-left: 45%;
-                border-radius: 50px;
-                background: linear-gradient(225deg, #8759ff, #714bdb);
-                box-shadow: -5px 5px 5px #422b7e,
-                            2px -2px 2px #ba7bff;
-            }
-            .home:hover{
-                background: linear-gradient(225deg, #8759ff, #714bdb);
-                box-shadow: -2px 2px 2px #ba7bff,
-                            2px -2px 2px #422b7e;
-                font-size: 40px;
-                outline: none;
-            }
-            a{
-                text-decoration: none;
-                color: white;
-            }
-        </style>
-    </head>
-    <body>
-        <img src="cone.png">
-        <h1>WebPage Under Contruction</h1>
-        <a href="https://www.linkedin.com/in/nhinge1/" class="home">Connect with me</a>
-      
-    </body>
+<div class="container">
+  <!-- Sidebar for switching between Professional and Personal -->
+  <div class="sidebar">
+    <button id="professionalBtn">Professional</button>
+    <button id="personalBtn">Personal</button>
+  </div>
+
+  <!-- Professional Panel -->
+  <div id="professional" class="panel active">
+    <h1>Professional</h1>
+    <section class="intro">
+      <h2>Machine Learning Engineer</h2>
+      <p>I am a Machine Learning Engineer at [Company Name]. I graduated from the University of Georgia with a Bachelor's degree in Data Science.</p>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Programming Languages:</strong> Python, SQL, R</li>
+        <li><strong>Additional Languages:</strong> JavaScript, Java, PHP, Web Programming</li>
+        <li><strong>Python Specializations:</strong> Data Visualization, Machine Learning (TensorFlow, PyTorch, Hugging Face models)</li>
+        <li><strong>Visualization Tools:</strong> GGPlot (R), Matplotlib (Python), PowerBI, Tableau</li>
+      </ul>
+    </section>
+
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Project 1</h3>
+        <p>Project description here.</p>
+        <a href="https://github.com/username/project1" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project">
+        <h3>Project 2</h3>
+        <p>Project description here.</p>
+        <a href="https://github.com/username/project2" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project">
+        <h3>Project 3</h3>
+        <p>Project description here.</p>
+        <a href="https://github.com/username/project3" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project">
+        <h3>Project 4</h3>
+        <p>Project description here.</p>
+        <a href="https://github.com/username/project4" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project">
+        <h3>Project 5</h3>
+        <p>Project description here.</p>
+        <a href="https://github.com/username/project5" target="_blank">View on GitHub</a>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Contact Me</h2>
+      <p><a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> | <a href="mailto:yourname@example.com">Email</a></p>
+    </section>
+  </div>
+
+  <!-- Personal Panel -->
+  <div id="personal" class="panel">
+    <h1>Personal</h1>
+    <section class="intro">
+      <h2>About Me</h2>
+      <p>Here you can add personal details about your interests, hobbies, and more.</p>
+    </section>
+
+    <section class="travel">
+      <h2>Travel</h2>
+      <p>List places you've traveled to or want to visit.</p>
+    </section>
+
+    <section class="contact">
+      <h2>Contact Me</h2>
+      <p>
+        <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a> |
+        <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a> |
+        <a href="https://facebook.com/yourprofile" target="_blank">Facebook</a>
+      </p>
+    </section>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
 </html>
+
